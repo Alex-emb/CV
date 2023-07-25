@@ -1,0 +1,618 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Mon Jul 24 2023 18:50:21 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="642e77866d7e2c49e3722617" data-wf-site="642e77856d7e2c299f72260f">
+<head>
+  <meta charset="utf-8">
+  <title>Alexandros Zekakos</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/alexs-fabulous-site-7cba4b.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Roboto:300,300italic,regular,italic,500,500italic,700,700italic,900,900italic:greek,greek-ext,latin,latin-ext"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body class="body">
+  <a href="#profile-image" class="back-to-top-link w-inline-block">
+    <div class="back-to-top-div">
+      <p class="back-to-top-icon"></p>
+    </div>
+  </a>
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="w-embed">
+      <style>
+.navbar:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+    </div>
+    <div class="nav-container w-container">
+      <a href="index.html" aria-current="page" class="brand w-nav-brand w--current">
+        <p class="brand-paragraph">Alexandros Zekakos</p>
+      </a>
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <a href="#work-experience" data-w-id="d2999f57-d753-9f0e-dd15-4cf47497531e" class="work-link text-color-green text-align-center w-nav-link">Work</a>
+        <a href="#education" data-w-id="d2999f57-d753-9f0e-dd15-4cf474975320" class="education-link text-color-green text-align-center w-nav-link">Education</a>
+        <a href="#projects" data-w-id="0285857d-8923-674c-7c58-e5be26f2f42b" class="projects-link text-color-green text-align-center w-nav-link">Projects</a>
+        <a href="#contact" data-w-id="d2999f57-d753-9f0e-dd15-4cf474975322" class="contact-link text-color-green text-align-center w-nav-link">Contact</a>
+      </nav>
+      <div class="menu-button w-nav-button">
+        <div class="icon w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+</style>
+    </div>
+    <main class="main-wrapper">
+      <div class="two-column-layout">
+        <div class="column left-side">
+          <section class="section-info background-color-white text-color-grey shadow-left">
+            <div class="w-embed">
+              <style>
+.shadow-left:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.shadow-left {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+            </div>
+            <div class="section-info_header">
+              <div id="profile-image" class="section-info_header-img-container"><img src="images/Rectangle-3-min.jpg" loading="lazy" width="202.5" alt="profile image" class="image">
+                <div class="section-info_header-buttons">
+                  <a href="documents/alexandros-zekakos-cv.pdf" target="_blank" class="section-info_download-button background-transparent button-left-border border-radius w-button">Download CV</a>
+                  <a href="#contact" data-w-id="8fd73902-e55e-4b6c-1814-6462f2ab66a0" class="section-info_hire-button background-color-aquagreen button-right-border border-radius w-button">Hire Me</a>
+                </div>
+              </div>
+              <div data-w-id="78a81d74-7e89-c623-82da-e534e4867505" style="opacity:0" class="section-info_personal">
+                <div class="padding-bottom padding-small"></div>
+                <div class="section-info_personal-info">
+                  <a href="#" class="personal-info w-inline-block">
+                    <div class="fa-home"></div>
+                    <div class="info">Athens, GR</div>
+                  </a>
+                </div>
+                <div class="padding-bottom padding-xxsmall"></div>
+                <div class="section-info_personal-info">
+                  <a href="mailto:alexzekakos@gmail.com" class="personal-info w-inline-block">
+                    <div class="fa-email"></div>
+                    <div class="info">alexzekakos@gmail.com</div>
+                  </a>
+                </div>
+                <div class="padding-bottom padding-xxsmall"></div>
+                <div class="section-info_personal-info">
+                  <a href="tel:6983014066" class="personal-info w-inline-block">
+                    <div class="fa-telephone"></div>
+                    <div class="info">+30 6947076624</div>
+                  </a>
+                </div>
+                <div class="padding-bottom padding-xxsmall"></div>
+                <div class="section-info_personal-info">
+                  <a href="https://www.linkedin.com/in/alexandros-zekakos-38bb72218/" target="_blank" class="personal-info w-inline-block">
+                    <div class="fa-linkdin"></div>
+                    <div class="info">Alexandros Zekakos</div>
+                  </a>
+                </div>
+                <div class="padding-bottom padding-xxsmall"></div>
+                <div class="section-info_personal-info">
+                  <a href="https://github.com/Alex-emb" target="_blank" class="personal-info w-inline-block">
+                    <div class="fa-github"></div>
+                    <div class="info">Alex-emb</div>
+                  </a>
+                </div>
+              </div>
+              <div class="padding-bottom padding-medium"></div>
+              <div data-w-id="07af7453-90f8-6ecc-e60e-6c1e8f002936" style="opacity:0" class="section-info_technical-skills">
+                <p class="personal-info-title"><span class="title-icon"></span>   TECHNICAL SKILLS</p>
+                <div class="divider"></div>
+                <div class="padding-bottom padding-small"></div>
+                <ul role="list">
+                  <li class="list-item"><span class="tech-skill-span">Hardware design</span></li>
+                  <li class="list-item"><span class="tech-skill-span">FPGA programming</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Firmware development</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Microcode optimization</span></li>
+                  <li class="list-item"><span class="tech-skill-span">In-memory computing</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Machine Learning</span></li>
+                  <li class="list-item"><span class="tech-skill-span">AI applications</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Data visualization</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Web development</span></li>
+                </ul>
+                <div class="padding-bottom padding-medium"></div>
+              </div>
+              <div data-w-id="7dd40d59-e4ea-e6fc-460f-31744806ec91" style="opacity:0" class="section-info_technical-skills">
+                <p class="personal-info-title"><span class="title-icon"></span>   HARD SKILLS</p>
+                <div class="divider"></div>
+                <div class="padding-bottom padding-small"></div>
+                <div class="section-info_hard-skills">
+                  <p class="hard-skill-title">Programming</p>
+                  <div class="padding-bottom padding-xxsmall"></div>
+                  <ul role="list" class="list">
+                    <li><span class="hard-skill-span">Python<br><em>Libraries</em>: Pandas, Numpy, Sklearn, Scipy, Matplotlib, Seaborn, PyQt5, Keras, Tensorflow</span></li>
+                    <li><span class="hard-skill-span">VHDL<br></span></li>
+                    <li><span class="hard-skill-span">C<br></span></li>
+                    <li><span class="hard-skill-span">Matlab<br></span></li>
+                    <li><span class="hard-skill-span">Javascript - HTML - CSS<br></span></li>
+                    <li><span class="hard-skill-span">Git<br></span></li>
+                    <li><span class="hard-skill-span">MS Office, Latex<br></span></li>
+                  </ul>
+                </div>
+                <div class="padding-bottom padding-small"></div>
+                <div class="section-info_hard-skills">
+                  <p class="hard-skill-title">Hardware</p>
+                  <div class="padding-bottom padding-xxsmall"></div>
+                  <ul role="list" class="list">
+                    <li><span class="hard-skill-span">Zynq-UltraScale</span></li>
+                    <li><span class="hard-skill-span">Zynq-7000<br></span></li>
+                    <li><span class="hard-skill-span">ARM &amp; Microblaze processors<br></span></li>
+                  </ul>
+                </div>
+                <div class="padding-bottom padding-small"></div>
+                <div class="section-info_hard-skills">
+                  <p class="hard-skill-title">Development Tools</p>
+                  <div class="padding-bottom padding-xxsmall"></div>
+                  <ul role="list" class="list">
+                    <li>Vivado - Vitis</li>
+                    <li><span class="hard-skill-span">Modelsim<br></span></li>
+                    <li><span class="hard-skill-span">Cadence<br></span></li>
+                    <li><span class="hard-skill-span">VSCode<br></span></li>
+                  </ul>
+                </div>
+                <div class="padding-bottom padding-medium"></div>
+              </div>
+              <div data-w-id="2deb2b79-b7ac-f590-27c1-82c44650b357" style="opacity:0" class="section-info_technical-skills">
+                <p class="personal-info-title"><span class="title-icon"></span>   SOFT SKILLS</p>
+                <div class="divider"></div>
+                <div class="padding-bottom padding-small"></div>
+                <ul role="list">
+                  <li class="list-item"><span class="tech-skill-span">Communication</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Critical thinking</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Problem solving</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Time management</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Organizational skills</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Creativity</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Efficiency</span></li>
+                  <li class="list-item"><span class="tech-skill-span">Agile</span></li>
+                </ul>
+                <div class="padding-bottom padding-medium"></div>
+              </div>
+              <div data-w-id="858c1469-0230-8fd7-efdb-2fc56ce5dac9" style="opacity:0" class="section-info_technical-skills">
+                <p class="personal-info-title"><span class="title-icon"></span>   LANGUAGES</p>
+                <div class="divider"></div>
+                <div class="padding-bottom padding-small"></div>
+                <div class="section-info_languages">
+                  <div class="section-info_languages-language">
+                    <p class="language-paragraph">Greek</p>
+                    <div class="language-balls">
+                      <div class="ball"></div>
+                      <div class="ball"></div>
+                      <div class="ball"></div>
+                      <div class="ball"></div>
+                      <div class="ball"></div>
+                    </div>
+                  </div>
+                  <div class="padding-bottom padding-xxsmall"></div>
+                  <div class="section-info_languages-language">
+                    <p class="language-paragraph">English</p>
+                    <div class="language-balls">
+                      <div class="ball"></div>
+                      <div class="ball"></div>
+                      <div class="ball"></div>
+                      <div class="ball"></div>
+                      <div class="ball"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="padding-bottom padding-medium"></div>
+              </div>
+              <div data-w-id="f39a9321-7867-92b5-b55a-7cadb3fac95d" style="opacity:0" class="section-info_technical-skills">
+                <p class="personal-info-title"><span class="title-icon"></span>   REFERENCES</p>
+                <div class="divider"></div>
+                <div class="padding-bottom padding-small"></div>
+                <p class="section-info_preferences-paragraph">Provided upon request</p>
+                <div class="padding-bottom padding-medium"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="column right-side right-flex">
+          <section id="personal-statement" class="section-work-experience background-color-white text-color-grey shadow-right padding-left-right">
+            <div class="w-embed">
+              <style>
+.shadow-right:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.shadow-right {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+</style>
+            </div>
+            <div class="padding-top padding-small"></div>
+            <p class="paragraph"><span class="right-title-icon"></span>   Personal Statement</p>
+            <div class="padding-bottom padding-small"></div>
+            <div data-w-id="964d1a1c-f2f4-5573-f2d2-edae16191db8" style="opacity:0" class="section-work-experience_experiences">
+              <p class="paragraph-2">👋 Greetings! Allow me to introduce myself. I am Alexandros Zekakos, an experienced Electrical and Computer Engineer.
+              Throughout my professional and academic journey, I have traversed captivating domains - hardware design, embedded
+              systems, signal processing, and machine learning - where my passion soared. Pursuing my master's in AI, I'm fueling my
+              thirst for knowledge. My valuable experience as a researcher at the COMES laboratory, accelerating machine learning with
+              FPGAs and PCM memories for an IBM Zurich-funded project, enriched my skills and knowledge. During my military service, I
+              decided to unlock a new realm of creativity through web development. Beyond technical abilities, I'm a friendly guy
+              who's highly motivated, enjoys working collaboratively and absolutely loves meeting new people. I am driven by a strong
+              work ethic, resilience, and an undying curiosity. This combination not only pushes me to solve complex problems, but it
+              also keeps my spirit high in the pursuit of success.🚀</p>
+            </div>
+            <div class="padding-bottom padding-medium"></div>
+          </section>
+          <section id="work-experience" class="section-work-experience background-color-white text-color-grey shadow-right padding-left-right">
+            <div class="w-embed">
+              <style>
+.shadow-right:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.shadow-right {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+</style>
+            </div>
+            <div class="padding-top padding-small"></div>
+            <p class="paragraph"><span class="right-title-icon"></span>   Work Experience</p>
+            <div class="padding-bottom padding-small"></div>
+            <div data-w-id="7eea3498-f281-3b91-4b9e-2899da27fab8" style="opacity:0" class="section-work-experience_experiences">
+              <p class="experience-title"><span class="experience-title-bold">Researcher</span>, COMES Laboratory, University of Patras, Greece</p>
+              <p class="date"> <span class="date-icon"></span>  Sep 2020 - Jul 2022</p>
+              <div class="padding-bottom padding-xsmall"></div>
+              <p class="bold-paragraph"><span class="bold-span">Project:</span> Machine Learning Algorithms and In-memory Computing Acceleration</p>
+              <p class="padding-paragraph"><span class="text-span"><em>Funded by:</em></span> IBM Zurich Research Laboratory</p>
+              <div class="padding-bottom padding-xsmall"></div>
+              <ul role="list" class="section-list">
+                <li>Developed cutting-edge hardware, firmware, and software solutions.</li>
+                <li>Successfully designed and implemented in-memory computing prototypes utilizing both the Single-Core and Multi-Core Hermes test evaluation platforms.</li>
+                <li>Developed FPGA hardware modules and optimized the microcode of embedded processors for enhanced performance and functionality.</li>
+                <li>Played a crucial role in supporting the Hermes set-up, including microcode implementation, hardware module integration, and comprehensive testing.</li>
+                <li>Conducted extensive testing and analysis of the behavior of the Single-Core and Multi-Core Hermes systems, ensuring their reliability and efficiency.</li>
+                <li>Utilized Hermes demonstrators to create AI applications, demonstrating the practical application of advanced technologies and algorithms.</li>
+              </ul>
+              <div class="padding-bottom padding-small"></div>
+              <div class="right-divider"></div>
+              <div class="padding-bottom padding-small"></div>
+            </div>
+            <div data-w-id="ca525800-eb49-ad28-756a-88dd8563577f" style="opacity:0" class="section-work-experience_experiences">
+              <p class="experience-title"><span class="experience-title-bold">Web Developer</span>, Freelance, Upwork</p>
+              <p class="date"> <span class="date-icon"></span>  Mar 2023- <span class="current">Current</span></p>
+              <div class="padding-bottom padding-xsmall"></div>
+              <p class="bold-paragraph"><span class="bold-span">Description:</span> Unlocking a new skill</p>
+              <div class="padding-bottom padding-xsmall"></div>
+              <ul role="list" class="section-list">
+                <li>Leveraging HTML, CSS, JavaScript, and other web technologies for user-friendly and optimized browsing experiences.</li>
+                <li>Combining design and development expertise to create visually stunning and functional websites.</li>
+                <li>Developing websites using Webflow for greater efficiency and flexibility.</li>
+                <li>Creating unique and impactful web solutions tailored to each client’s specific needs and goals.</li>
+                <li>Staying up-to-date with the latest industry trends and advancements.</li>
+              </ul>
+              <div class="padding-bottom padding-medium"></div>
+            </div>
+          </section>
+          <section id="education" class="section-work-experience background-color-white text-color-grey shadow-right padding-left-right">
+            <div class="padding-top padding-small"></div>
+            <p class="paragraph"><span class="right-title-icon"></span>   Education</p>
+            <div class="padding-bottom padding-small"></div>
+            <div data-w-id="d5bcbbcd-c122-75ad-d75a-a67a6dc44091" style="opacity:0" class="section-work-experience_experiences">
+              <p class="education-title">Bachelor in Electrical and Computer Engineering</p>
+              <p class="education-subtitle">Department of Electrical and Computer Engineering, University of Patras, Greece</p>
+              <p class="education-subtitle">- Integrated Master of Engineering</p>
+              <p class="date"> <span class="date-icon"></span>  Sep 2013 - Jul 2020</p>
+              <div class="padding-bottom padding-xsmall"></div>
+              <ul role="list" class="section-list">
+                <li><span><strong><em>Division:</em></strong></span> Electronics and Embedded Systems.</li>
+                <li><span><strong><em>Main Interests:</em></strong></span> Electronics, Embedded Systems, VLSI, Signal Processing, Machine Learning</li>
+              </ul>
+              <div class="padding-bottom padding-small"></div>
+              <div class="right-divider"></div>
+              <div class="padding-bottom padding-small"></div>
+            </div>
+            <div data-w-id="1511b164-9100-f8e2-cc24-db79d85918f5" style="opacity:0" class="section-work-experience_experiences">
+              <p class="education-title">Master in Information Processing Systems and Artificial Intelligence</p>
+              <p class="education-subtitle">Department of Electrical and Computer Engineering, University of Patras, Greece</p>
+              <p class="date"> <span class="date-icon"></span>  Nov 2021 - <span class="current">Current</span></p>
+              <div class="padding-bottom padding-medium"></div>
+            </div>
+          </section>
+          <section id="projects" class="section-work-experience background-color-white text-color-grey shadow-right padding-left-right">
+            <div class="padding-top padding-small"></div>
+            <p class="paragraph"><span class="right-title-icon"></span>   Projects</p>
+            <div class="padding-bottom padding-small"></div>
+            <div data-w-id="aed0453a-438b-e791-155d-162915a57e47" style="opacity:0" class="section-work-experience_experiences">
+              <p class="education-title">Neural Network Implementation for Detection of Sleep Stages</p>
+              <div class="padding-bottom padding-xsmall"></div>
+              <p class="bold-paragraph"><strong><em>Supervisor:</em></strong> Professor Theodore Antonakopoulos</p>
+              <div class="padding-bottom padding-xxsmall"></div>
+              <p class="bold-paragraph"><strong><em>Description:</em></strong> Master’s thesis focused on developing an artificial neural network for sleep stage detection using heartbeat intervals. Implemented on Zynq-7000.</p>
+              <div class="padding-bottom padding-xxsmall"></div>
+              <p class="link-paragraph bold-paragraph"><strong><em>Link:</em></strong> </p>
+              <a href="http://hdl.handle.net/10889/13704" target="_blank" class="master-thesi-link">http://hdl.handle.net/10889/13704</a>
+              <div class="padding-bottom padding-small"></div>
+              <div class="right-divider"></div>
+              <div class="padding-bottom padding-small"></div>
+            </div>
+            <div data-w-id="aed0453a-438b-e791-155d-162915a57e62" style="opacity:0" class="section-work-experience_experiences">
+              <p class="education-title">MVM Acceleration on Zynq UltraScale with URAM Utilization</p>
+              <div class="padding-bottom padding-xsmall"></div>
+              <p class="bold-paragraph"><strong><em>Description:</em></strong> Achieved high-performance computing by leveraging URAMs for efficient storage of matrix parameters.</p>
+              <div class="padding-bottom padding-small"></div>
+              <div class="right-divider"></div>
+              <div class="padding-bottom padding-small"></div>
+            </div>
+            <div data-w-id="69be498f-5ede-0530-dc12-281e66e5a7a9" style="opacity:0" class="section-work-experience_experiences">
+              <p class="education-title">MVM Acceleration on Zynq UltraScale with FIR Utilization</p>
+              <div class="padding-bottom padding-xsmall"></div>
+              <p class="bold-paragraph"><strong><em>Description:</em></strong> This project aimed to assess the efficiency of the FIR IP core in optimizing MVM operations.</p>
+              <div class="padding-bottom padding-small"></div>
+              <div class="right-divider"></div>
+              <div class="padding-bottom padding-small"></div>
+            </div>
+            <div data-w-id="ab3a3f09-1da6-b10a-0d83-81bfaf755a41" style="opacity:0" class="section-work-experience_experiences">
+              <p class="education-title">Full Duplex Communication with Xon-Xoff Protocol using ARTY Boards</p>
+              <div class="padding-bottom padding-xsmall"></div>
+              <p class="bold-paragraph"><strong><em>Description:</em></strong> Created a seamless full duplex communication system employing Xon-Xoff protocol on two ARTY boards, allowing character exchange with two terminal PCs via RS232.</p>
+              <div class="padding-bottom padding-small"></div>
+              <div class="right-divider"></div>
+              <div class="padding-bottom padding-small"></div>
+            </div>
+            <div data-w-id="d4b661b8-6c1d-f5c4-8d77-42a4ac973db3" style="opacity:0" class="section-work-experience_experiences">
+              <p class="education-title">Hardware Implementation of Data Encryption Standard (DES) in VHDL</p>
+              <div class="padding-bottom padding-xsmall"></div>
+              <p class="bold-paragraph"><strong><em>Description:</em></strong> Designed and executed a robust hardware implementation of the Data Encryption Standard (DES) using VHDL, ensuring secure data encryption.</p>
+              <div class="padding-bottom padding-medium"></div>
+            </div>
+          </section>
+          <section class="section-work-experience background-color-white text-color-grey shadow-right padding-left-right">
+            <div class="padding-top padding-small"></div>
+            <p class="paragraph"><span class="right-title-icon"></span>   Other</p>
+            <div class="padding-bottom padding-small"></div>
+            <div data-w-id="f29e0888-4ada-19b3-0d72-7b74e0776938" style="opacity:0" class="section-work-experience_experiences">
+              <p class="experience-title"><span class="experience-title-bold">Military Service,</span> Greek Army</p>
+              <p class="date"> <span class="date-icon"></span>  Oct 2022 - <span class="current">Current</span></p>
+              <div class="padding-bottom padding-xsmall"></div>
+              <p class="bold-paragraph"><strong><em>Description:</em></strong> Currently fulfilling my mandatory military service in Greek Army.</p>
+              <div class="padding-bottom padding-medium"></div>
+            </div>
+          </section>
+          <section id="contact" data-w-id="c8c7f595-3fc8-20c6-dea6-5f1a8d17290c" class="section-work-experience background-color-white text-color-grey shadow-right padding-left-right">
+            <div class="padding-top padding-small"></div>
+            <p class="paragraph"><span class="right-title-icon"></span>   Contact</p>
+            <div class="padding-bottom padding-small"></div>
+            <div class="section-work_contact">
+              <div data-w-id="4083f4bc-7d22-c730-1912-a9a9211dd07f" style="opacity:0" class="section-work_contact-left">
+                <div class="contact-info">
+                  <p class="contact-info"><span class="fa-telephone"></span>   +30 6947076624</p>
+                  <div class="padding-bottom padding-xxsmall"></div>
+                  <p class="contact-info"><span class="fa-telephone"></span>   alexzekakos@gmail.com</p>
+                </div>
+                <div class="padding-bottom padding-small padding-medium"></div>
+                <p class="contact-paragraph">Feel free to contact me!</p>
+                <div class="padding-bottom padding-small padding-small"></div>
+                <div class="form-block w-form">
+                  <form id="email-form" name="email-form" data-name="Email Form" action="https://formspree.io/f/myyqzopb" method="POST" class="form form-text-color" 
+                  data-wf-page-id="642e77866d7e2c49e3722617" data-wf-element-id="ffc27ca3-6b1c-2039-51a6-828cf87bd962">
+                  <input type="text" class="form-field-border w-input" maxlength="256" name="name" data-name="Name" placeholder="Name" id="name" required="">
+                  <input type="email" class="form-field-border w-input" maxlength="256" name="email" data-name="Email" placeholder="Email address" id="email" required="">
+                  <textarea placeholder="Message" maxlength="5000" id="field" name="field" data-name="Field" class="textarea form-field-border w-input">
+                  </textarea>
+                  <input type="submit" value="Send" data-wait="Please wait..." class="form-button-submit button-submit-radius w-button">
+                  </form>
+                  <div class="w-form-done">
+                    <div>Thank you! I will reach out soon!</div>
+                  </div>
+                  <div class="w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="e822368e-ee5d-c4a5-e5bb-dd687e41475b" style="opacity:0" class="section-work_contact-right">
+                <div class="map w-widget w-widget-map" data-widget-style="roadmap" data-widget-latlng="37.8756151,23.7564773" aria-label="" data-enable-scroll="false" role="region" title="" data-enable-touch="true" data-widget-zoom="12" data-widget-tooltip=""></div>
+              </div>
+            </div>
+            <div class="padding-bottom padding-medium"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <nav class="section-footer">
+      <div class="padding-bottom padding-small"></div>
+      <p class="text-color-white">Find me on social media.</p>
+      <div class="padding-bottom padding-xsmall"></div>
+      <div class="social-icons">
+        <a href="#" class="social-link w-inline-block">
+          <p><span class="fa-icon"></span></p>
+        </a>
+        <a href="#" class="social-link w-inline-block">
+          <p><span class="fa-icon"></span></p>
+        </a>
+        <a href="#" class="social-link w-inline-block">
+          <p><span class="fa-icon"></span></p>
+        </a>
+        <a href="#" class="social-link w-inline-block">
+          <p><span class="fa-icon"></span></p>
+        </a>
+      </div>
+      <div class="padding-bottom padding-small"></div>
+    </nav>
+  </footer>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=642e77856d7e2c299f72260f" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
